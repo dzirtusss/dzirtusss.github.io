@@ -1,0 +1,35 @@
+<iframe
+  width="0"
+  height="0"
+  border="0"
+  name="dummyframe"
+  id="dummyframe"
+  style="display:none !important"
+></iframe>
+
+<form
+  action="https://u0cr80njxa.execute-api.us-east-1.amazonaws.com/deploy/send-message"
+  method="post"
+  onsubmit="this.submit(); alert('Your message was sent, thanks.'); this.reset(); return false;"
+  target="dummyframe"
+>
+  <table style="width: 100%;display: table;max-width:600px;">
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="username" style="width: 100%" /></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="email" name="email" style="width: 100%;" /></td>
+    </tr>
+    <tr>
+      <td>Message:</td>
+      <td>
+        <textarea name="message" style="width: 100%;height:100px"> </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="submit" value="Send" /></td>
+    </tr>
+  </table>
+</form>

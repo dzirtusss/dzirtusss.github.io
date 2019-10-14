@@ -1,0 +1,67 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.site-title {
+  position: relative;
+  margin-bottom: 20px;
+
+  img {
+    border: 1px solid;
+    border-color: #808080;
+  }
+
+  h1 {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    padding: 3px 30px 5px 30px;
+    font-size: 2vw;
+
+    border-bottom: 0;
+    border-radius: 5px;
+    background-color: black;
+    // border: 1px solid;
+    // border-color: #c0c0c0;
+
+    a {
+      color: white;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    position: absolute;
+    top: 15%;
+  }
+
+  li {
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  li + li {
+    margin-top: 0px;
+  }
+}
+
+.posts {
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+}
+
+.post {
+  font-size: 95%;
+}

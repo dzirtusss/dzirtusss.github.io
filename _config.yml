@@ -1,1 +1,20 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-primer
+title: dzirtusss (aka Sergey Tarasov)
+description: just a personal blog
+url: "http://dzirtusss.github.io"
+author: dzitusss
+logo: /assets/header.jpg
+
+plugins:
+  - jemoji
+  # - jekyll-avatar
+  - jekyll-seo-tag
+  - jekyll-sitemap # position is important
+
+permalink: /:categories/:title
+
+exclude:
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile

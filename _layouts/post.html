@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="post">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.date | date_to_string }}</p>
+
+  {{ content }}
+
+  <hr />
+  {% assign page_comments = site.data.comments | where: "url", page.url %}
+  <strong>Comments: {{page_comments.size}}</strong>
+
+  <ul>
+    {%for comment in page_comments %}
+    <li>
+      <strong>{{comment["name"]}}</strong>
+      <br />
+      {{comment["text"]}}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <br />
+  <br />
+  <p>You could post a comment here:</p>
+  {% include send_message.html %}
+</div>

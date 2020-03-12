@@ -1,10 +1,14 @@
 ---
-title: Ruby in FP style
+title: Fun way of coding ruby in FP style
 tags: [ruby]
-published: false
+published: true
 ---
 
-Some fun way of coding Ruby in FP style.
+Normally we think of ruby as OO language, but actually it can be good in "pure" FP as well.
+I mean "generally", not "practically", because there is no any multi-threaded infrastructure
+to support parallel functions - "normally" ruby still runs as a single process.
+
+But why not to have some fun and think how it may look like if done in Functional Programming way? So... just playing around.
 
 ```ruby
 require 'faraday'
@@ -41,3 +45,7 @@ end
 
 App::App['cats']
 ```
+
+This works perfectly, but hey... how hard is to read this.
+
+

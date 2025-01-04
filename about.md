@@ -38,6 +38,9 @@ You can find my current contact info on Github at [dzirtusss](https://github.com
 </div>
 
 <br />
+Or send me a message via the form below:
+
+{% include send_message.html %}
 
 <div class="contact-info">
 Some old articles about me from pre-dev life as published in:
